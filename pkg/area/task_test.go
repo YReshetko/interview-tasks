@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	task "github.com/YReshetko/interview-tasks/pkg/task1"
+	task "github.com/YReshetko/interview-tasks/pkg/area"
 )
 
 func TestRun_InvalidArea(t *testing.T) {
