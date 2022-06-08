@@ -15,15 +15,12 @@ var steps = [4]point{{0, 1}, {1, 0}, {-1, 0}, {0, -1}}
 type stack []point
 
 func (s *stack) push(p point) {
-	st := *s
-	st = append([]point{p}, st...)
-	*s = st
+	*s = append(*s, p)
 }
 
 func (s *stack) pop() point {
-	st := *s
-	p, n := st[0], st[1:]
-	*s = n
+	p := (*s)[len(*s)-1]
+	*s = (*s)[:len(*s)-1]
 	return p
 }
 
