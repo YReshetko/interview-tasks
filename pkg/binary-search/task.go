@@ -11,8 +11,8 @@ func Search[T Comparable](a []T, value T) (int, bool) {
 	lo := 0
 	hi := len(a)
 
-	for lo <= hi {
-		mid := lo + (hi-lo)/2
+	for lo < hi {
+		mid := (hi + lo) / 2
 		if value < a[mid] {
 			hi = mid - 1
 		} else if value > a[mid] {
