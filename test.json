@@ -1,0 +1,6 @@
+a: 100
+b: Hello
+c:
+    - World
+    - ' Yury'
+    - All
